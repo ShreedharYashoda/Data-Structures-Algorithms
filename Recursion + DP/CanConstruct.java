@@ -13,6 +13,7 @@ class CanConstruct {
 		
   }
 
+	// O(n*m^2)  O(m^2)  m - length of target, n ->no of strings in dict
 	public static boolean canConstruct(String target, List<String> dict, Map<String, Boolean> cache){
 			if(cache.containsKey(target)) return cache.get(target);
 			if(target.equals("")) return true;
