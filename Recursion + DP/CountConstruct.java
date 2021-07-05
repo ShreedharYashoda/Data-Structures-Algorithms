@@ -9,7 +9,7 @@ class CountConstruct {
 		System.out.println(countConstruct("skateboard", Arrays.asList("bo","rd","ate","t","ska","sk","boar"), cache));
 
 		cache = new HashMap<>();
-		System.out.println(countConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", Arrays.asList("e","ee","eee","eeee","eeee"), cache));
+		System.out.println(countConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", Arrays.asList("e","ee","eee","eeee","eeeef"), cache));
 		
   }
 
