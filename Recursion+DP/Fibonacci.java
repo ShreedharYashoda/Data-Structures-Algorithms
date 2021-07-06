@@ -1,4 +1,4 @@
-// fib(n) = fib(n-1) + fib(n-2)
+ls// fib(n) = fib(n-1) + fib(n-2)
 
 import java.util.*;
 class Fibonacci {
