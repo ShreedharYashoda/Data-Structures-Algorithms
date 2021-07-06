@@ -3,7 +3,7 @@
 import java.util.*;
 class Fibonacci {
   public static void main(String[] args) {
-    System.out.println(fib_recurse(6));
+    System.out.println(fib_recurse(8));
     System.out.println(memoize(6));
     System.out.println(tabulate(6));
   }
