@@ -75,7 +75,7 @@ class FileSystem {
 
 
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 	// ["","ls","mkdir","addContentToFile","ls","readContentFromFile"]
 	// [[],["/"],["/a/b/c"],["/a/b/c/d","hello"],["/"],["/a/b/c/d"]]
 
