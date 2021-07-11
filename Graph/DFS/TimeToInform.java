@@ -10,7 +10,6 @@ class TimeToInform{
 
 		for(int i=0; i<manager.length; i++){
 			if(manager[i] == -1) continue;
-
 			graph[manager[i]].add(i);
 		}
 
