@@ -40,6 +40,13 @@ class DeleteDuplicatesUnsorted{
 			node.next.next = new ListNode(3);
 			node.next.next.next = new ListNode(2);
 
+			ListNode temp = node;
+			while(temp != null){
+				System.out.print(temp.val +" ");
+				temp = temp.next;
+			}
+			System.out.println();
+
 			ListNode ans = deleteDuplicatesUnsorted(node);
 
 			while(ans != null){
@@ -48,4 +55,3 @@ class DeleteDuplicatesUnsorted{
 			}
 		}
 }
-
