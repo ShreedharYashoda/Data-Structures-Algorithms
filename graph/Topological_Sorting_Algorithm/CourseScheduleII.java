@@ -5,21 +5,21 @@ import java.util.*;
 class CourseScheduleII {
 
 	public static List<Integer> findOrder(int n, int[][] edges){
-				ArrayList<Integer>[] graph = new ArrayList[n];
+				Map<Integer, List<Integer>> graph = new HashMap<>();
         int[] degree = new int[n];
         List<Integer> order = new ArrayList<>();
         
-        for(int i=0; i<n; i++) graph[i] = new ArrayList<>();
+        for(int i=0; i<n; i++) graph.put(i,new ArrayList<>());
         
         for(int[] e:edges){
-            graph[e[1]].add(e[0]);
+            graph.get(e[1]).add(e[0]);
             degree[e[0]]++;
         }
         
         for(int i=0; i<n; i++) if(degree[i] == 0) order.add(i);
         
         for(int i=0; i<order.size(); i++){
-            for(int j:graph[order.get(i)]){
+            for(int j:graph.get(order.get(i))){
                 if(--degree[j] == 0) order.add(j);
             }
         }
